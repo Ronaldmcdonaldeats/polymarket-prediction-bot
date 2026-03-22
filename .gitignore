@@ -1,0 +1,36 @@
+# Secrets
+.env
+.env.local
+.env.*.local
+
+# Claude user settings
+.claude/settings.local.json
+
+# Claude worktrees (temporary agent work directories)
+.claude/worktrees/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Memory files (runtime data, may contain sensitive info)
+memory/*.json
+!memory/.gitkeep
+
+# Logs
+*.log
+bot.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# External cloned dependencies (CCPM skill is a symlink, not the full repo)
+ccpm/
+polymarket-subgraph/
